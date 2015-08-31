@@ -54,7 +54,11 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+<<<<<<< HEAD
     <Import Project="..\..\..\openframeworks\libs\openFrameworksCompiled\project\vs\openFrameworksRelease64.props" />
+=======
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+>>>>>>> 51ccc4f941450ebd1532a38b71dbd6a4d8bc7220
     <Import Project="..\ofxKinectForWindows2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
@@ -64,7 +68,11 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+<<<<<<< HEAD
     <Import Project="..\..\..\openframeworks\libs\openFrameworksCompiled\project\vs\openFrameworksDebug64.props" />
+=======
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+>>>>>>> 51ccc4f941450ebd1532a38b71dbd6a4d8bc7220
     <Import Project="..\ofxKinectForWindows2.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
