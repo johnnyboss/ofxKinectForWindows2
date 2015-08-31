@@ -18,6 +18,32 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 	kinect.update();
+	ofFloatPixels refPixels = kinect.getBodyIndexSource()->getPixels();
+	int bla = 0;
+	unsigned short* rawdepth = kinect.getDepthSource()->getPixels();
+
+	ofPixels pixels = kinect.getDepthSource()->getPixels(); ;// kinect.getDepthSource()->getDepthToWorldMap();
+	
+	float avgDist = 0;
+	int nSamples = 0;
+	if (pixels.size() > 0 && refPixels.size() > 0)
+	{
+		for (int i = 0; i < 512; i++)
+		{
+			for (int j = 0; j < 424; j++)
+			{
+				int index = j * 512 + i;
+				//cout << refPixel << endl;
+				if (refPixels.getColor(index) == ofFloatColor(0,0,0))
+				{
+					avgDist += pixels[index];
+					nSamples++;
+				}
+			}
+		}
+
+		cout << "AVERAGE " << nSamples << endl;
+	}
 }
 
 //--------------------------------------------------------------
