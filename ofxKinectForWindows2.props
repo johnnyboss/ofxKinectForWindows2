@@ -13,6 +13,7 @@
     </Lib>
     <Link>
       <AdditionalLibraryDirectories>$(KINECTSDK20_DIR)\Lib\x64;$(KINECTSDK20_DIR)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kinect20.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
